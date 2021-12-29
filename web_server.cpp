@@ -23,7 +23,7 @@ shared_ptr<HttpServer::Response> render_page(string path,
         string line;
         while (getline(doc, line))
         {
-            stream << line;
+            stream << line << "\n";
         }
         response->write(status_code, stream);
     }

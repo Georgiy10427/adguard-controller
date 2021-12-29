@@ -1,6 +1,6 @@
 function open_adguard()
 {
-    window.open("http://" + String(location.host) + ":3000" + "/");
+    window.open("http://" + String(location.host) + ":8080" + "/");
 }
 
 function power_off()
@@ -95,7 +95,7 @@ function go_root()
 
 function init_timer()
 {
-    setTimeout(go_root, 20000);
+    setTimeout(go_root, 32000);
 }
 
 function update_config(new_config)

@@ -19,4 +19,4 @@ release:
 	$(CC) $(FILE) $(CFLAGS) -fprofile-use -o server.bin
 
 cross:
-	aarch64-linux-gnu-g++ $(FILE) $(CROSS_CFLAGS) -o server_arm.bin
+	aarch64-linux-gnu-g++ $(FILE) $(CROSS_CFLAGS) -O3 -o server_arm.bin
