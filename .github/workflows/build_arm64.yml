@@ -9,4 +9,4 @@ jobs:
       run: sudo apt update && sudo apt install -qy g++-aarch64-linux-gnu=4:9.3.0-1ubuntu2 libpthread-stubs0-dev libevent-pthreads-2.1-7
     # build project
     - name: build
-      run: aarch64-linux-gnu-g++ web_server.cpp -std=c++17 -mcpu=cortex-a35 -o server_arm.bin
+      run: aarch64-linux-gnu-g++ web_server.cpp -pthread -std=c++17 -o server_arm.bin
