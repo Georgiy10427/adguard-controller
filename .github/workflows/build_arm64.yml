@@ -1,4 +1,4 @@
-name: x86
+name: arm64
 on: [push]
 jobs:
   build:
